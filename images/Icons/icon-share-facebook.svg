@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-share-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="7.231 13.9285 7.231 0.0005 0.0001 0.0005 0.0001 13.9285 7.231 13.9285"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-share-facebook">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path d="M7.2311,0.1005 C7.0051,0.0675 6.2271,0.0005 5.3231,0.0005 C3.4311,0.0005 2.1341,1.1555 2.1341,3.2725 L2.1341,5.0975 L0.0001,5.0975 L0.0001,7.5755 L2.1341,7.5755 L2.1341,13.9285 L4.6951,13.9285 L4.6951,7.5755 L6.8211,7.5755 L7.1471,5.0975 L4.6951,5.0975 L4.6951,3.5155 C4.6951,2.8045 4.8871,2.3105 5.9171,2.3105 L7.2311,2.3105 L7.2311,0.1005 Z" id="Fill-1" fill="#A2A6A9" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

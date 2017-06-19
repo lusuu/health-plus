@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="68px" viewBox="0 0 54 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>google-pin</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 68 0 0.145 53.657 0.145 53.657 68"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="google-pin" transform="translate(0.000000, -1.000000)">
+            <g id="Group-3" transform="translate(0.000000, 0.854800)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M26.8287,68 C26.8287,68 53.6577,41.791 53.6577,26.974 C53.6577,12.156 41.6457,0.145 26.8287,0.145 C12.0117,0.145 -0.0003,12.156 -0.0003,26.974 C-0.0003,41.791 26.8287,68 26.8287,68" id="Fill-1" fill="#697F91" mask="url(#mask-2)"></path>
+            </g>
+            <path d="M26.8287,14.6629 L26.8287,40.9949" id="Stroke-4" stroke="#FEFEFE" stroke-width="6.583" stroke-linecap="round"></path>
+            <path d="M39.9944,27.8287 L13.6624,27.8287" id="Stroke-5" stroke="#FEFEFE" stroke-width="6.583" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

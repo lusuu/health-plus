@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-checkbox-ticked</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="4.06575815e-20 0.0004 4.06575815e-20 11.7854 11.7848 11.7854 11.7848 0.0004 0 0.0004"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-checkbox-ticked">
+            <g id="Page-1">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M9.3748,1.0714 C10.1118,1.0714 10.7138,1.6744 10.7138,2.4104 L10.7138,9.3754 C10.7138,10.1114 10.1118,10.7144 9.3748,10.7144 L2.4098,10.7144 C1.6728,10.7144 1.0708,10.1114 1.0708,9.3754 L1.0708,2.4104 C1.0708,1.6744 1.6728,1.0714 2.4098,1.0714 L9.3748,1.0714 Z M11.7848,2.4104 C11.7848,1.0794 10.7058,0.0004 9.3748,0.0004 L2.4098,0.0004 C1.0788,0.0004 -0.0002,1.0794 -0.0002,2.4104 L-0.0002,9.3754 C-0.0002,10.7054 1.0788,11.7854 2.4098,11.7854 L9.3748,11.7854 C10.7058,11.7854 11.7848,10.7054 11.7848,9.3754 L11.7848,2.4104 Z" id="Fill-1" fill="#454D52" mask="url(#mask-2)"></path>
+            </g>
+            <polygon id="check---material" fill="#000000" points="4.69048301 7.39255814 10.0708408 2 10.7906619 2.71982111 4.69048301 8.82 1.86 5.98951699 2.56762075 5.26969589"></polygon>
+        </g>
+    </g>
+</svg>

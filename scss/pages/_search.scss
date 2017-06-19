@@ -1,0 +1,147 @@
+.search-page-form{
+	input{
+		background:$grey2;
+		border: 1px solid $slate2;
+		border-width: 1px 0 0 ;
+		&[placeholder] {
+			color: $slate2;
+		}
+		&[type="text"] {
+			padding: 8px 15px 8px;
+			font-weight: 500;
+		}
+	}
+	.search-bg{
+		/* border: 1px solid $slate2; */
+		border-width: 1px 0 0 ;
+		background:$grey2 url(images/Icons/PNGs/icon-search.png) center no-repeat;
+		width: 40px;
+		height: 44px;
+	}
+	.input-group {
+		border: 1px solid $slate2;
+		border-width: 1px 0 0;
+		/* placeholder[] */
+	}
+	.form-control{
+		font-size: 18px;
+	}
+}
+.search-title {
+	span {
+		font-size: 18px;
+		margin-bottom: 10px;
+		font-weight: 500;
+	}
+}
+form {
+	margin-top: 20px;
+}
+.search-visible {
+	padding: 48px 0;
+	background: url(images/search-head.jpg) no-repeat;
+	.search-content {
+		span {
+			font-size: 18px;
+			color: $slate2;
+		}
+	}
+	.holder {
+		text-align: center;
+	}
+}
+.search-breadcrumb{
+	padding: 8px 15px;
+	margin-bottom: 20px;
+}
+.row-results{
+	border: 1px solid $slate2;
+	border-width: 0 0 1px;
+	padding: 35px 0 10px;
+	transition: all .3s linear;
+	&:hover {
+		background-color: $grey2;
+	}
+	.category{
+		display: inline-block;
+		width: 10%;
+		vertical-align: middle;
+		color: $slate2;
+		font-size: 15px;
+		font-weight: 300;
+	}
+	.title{
+		display: inline-block;
+		width: 81%;
+		@include media('<desktop') {
+			width: 79%;
+		}
+		vertical-align: middle;
+		font-size: 30px;
+		font-weight: 300;
+		color: $slate1;
+	}
+	.search-link{
+		width: 8%;
+		display: inline-block;
+		text-align: right;
+		vertical-align: middle;
+		color: $slate1;
+		img{
+			vertical-align: middle;
+		}
+	}
+}
+.results {
+	margin-bottom: 40px;
+	@include media('<tablet') {
+		font-size: 14px;
+	}
+}
+.search-content {
+	margin-bottom: 70px;
+	@include media('<tablet') {
+		margin-bottom: 10px;
+	}
+	.search-title {
+		span {
+			color: $slate2;
+		}
+	}
+}
+@include media('<tablet') {
+	.search-title {
+		span, input[type="text"]{
+			font-size: 14px;
+		}
+		.search-page-form {
+			.search-bg {
+				height: 37px;
+			}
+		}
+	}
+	.row-results {
+		position: relative;
+		padding-bottom: 45px;
+		.title{
+			width: 85%;
+		}
+		.search-link{
+			width: 10%;
+			position: absolute;
+			bottom: 6px;
+			right: 5px;
+		}
+		.category {
+			position: absolute;
+			bottom: 0;
+			width: 70%;
+		}
+	}
+	.results {
+		.title {
+			font-size: 18px;
+			font-weight: 300;
+		}
+	}
+}

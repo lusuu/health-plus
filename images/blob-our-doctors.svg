@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="383px" height="334px" viewBox="0 0 383 334" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>blob-our-doctors</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 333.969903 0 0 382.382211 0 382.382211 333.969903"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="blob-our-doctors">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path d="M351.614177,184.208781 C468.437982,127.691577 216.73948,-52.8702914 191.484959,15.0675108 C166.231171,83.006047 88.1277864,51.821458 29.9352653,112.240223 C13.5880623,129.213295 -33.9773094,167.502909 41.1112347,231.843788 C116.199779,296.185401 111.752723,354.432065 194.30243,327.023511 C276.852871,299.614223 173.268246,270.488689 351.614177,184.208781" id="Fill-1" fill="#FCF9F4" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

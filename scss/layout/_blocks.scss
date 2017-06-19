@@ -1,0 +1,67 @@
+.page-title {
+	padding: 30px 0 20px;
+	margin-bottom: 50px;
+	font-size: 18px;
+	font-weight: 500;
+	background: url(images/service-head.jpg) center no-repeat;
+	background-size: cover;
+	h1 {
+		color: $slate1;
+		font-weight: 500;
+		margin-bottom: 0px;
+	}
+	a{
+		font-weight: 500;
+		font-size: 18px;
+	}
+	.breadcrumb{
+		background-color: transparent;
+		& > li + li:before {
+			content: " \f054 ";
+			font-family: FontAwesome;
+			font-size: 9px;
+			vertical-align: middle;
+			color: $slate1;
+		}
+	}
+	@include media ('<tablet') {
+		margin-bottom: 20px;
+	}
+	@include media ('<phone') {
+		padding: 25px 0 13px;
+		h1{
+			font-size: 24px;
+		}
+		.breadcrumb{
+			display: none;
+		}
+	}
+}
+
+
+.breadcrumb-mobile{
+	display: none;
+	background:$grey1;
+	padding: 5px 0 ;
+	ul{
+		@extend %listreset;
+		li{
+			display: inline-block;
+			+li{
+				&:before{
+					content: ' \f054 ';
+					font-family: "FontAwesome";
+					font-size: 8px;
+					margin-left: 5px;
+					margin-right: 5px;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+
+	@include media ('<tablet') {
+		display: block;
+	}
+
+}

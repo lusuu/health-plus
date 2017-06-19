@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-footer-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="11.99905 0.002 23.998 0.002 23.998 24 11.99905 24 0.0001 24 0.0001 0.002 11.99905 0.002"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-footer-facebook" transform="translate(0.000000, -1.000000)">
+            <g id="Group-3" transform="translate(0.000000, 0.998300)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M11.9991,24 C18.6261,24 23.9981,18.628 23.9981,12.001 C23.9981,5.374 18.6261,0.002 11.9991,0.002 C5.3721,0.002 0.0001,5.374 0.0001,12.001 C0.0001,18.628 5.3721,24 11.9991,24" id="Fill-1" fill="#E9C6A7" mask="url(#mask-2)"></path>
+            </g>
+            <path d="M15.3485,6.4683 C15.1395,6.4373 14.4185,6.3753 13.5805,6.3753 C11.8285,6.3753 10.6265,7.4453 10.6265,9.4063 L10.6265,11.0973 L8.6495,11.0973 L8.6495,13.3923 L10.6265,13.3923 L10.6265,19.2763 L12.9995,19.2763 L12.9995,13.3923 L14.9685,13.3923 L15.2705,11.0973 L12.9995,11.0973 L12.9995,9.6313 C12.9995,8.9723 13.1775,8.5153 14.1315,8.5153 L15.3485,8.5153 L15.3485,6.4683 Z" id="Fill-4" fill="#454D52"></path>
+        </g>
+    </g>
+</svg>

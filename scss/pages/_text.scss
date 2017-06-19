@@ -1,0 +1,47 @@
+.page-content {
+	p {
+		margin-bottom: 40px;
+		font-weight: 300;
+	}
+}
+
+.page-holder {
+	li {
+		margin-bottom: 10px;
+		list-style-type: disc;
+		font-weight: 300;
+	}
+	h4 {
+		font-size: 18px;
+		margin-bottom: 25px;
+		font-weight: 500;
+	}
+	ul {
+		margin-bottom: 100px;
+		padding: 0;
+		position: relative;
+		&:before{
+			content:'';
+			background: $grey1;
+			position: absolute;
+			left: -80px;
+			bottom: 5px;
+			top: -50px;
+			width: 1px;
+			@include media('<desktop') {
+				left: -5px;
+				top: 0;
+				bottom: 0;
+			}
+		}
+		@include media('<desktop') {
+			padding-left: 25px;
+		}
+	}
+}
+.line {
+	margin-top: 10px;
+	margin-bottom: 50px;
+	height: 2px;
+	background: $grey1;
+}
