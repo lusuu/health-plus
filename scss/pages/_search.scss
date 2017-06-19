@@ -1,22 +1,32 @@
 .search-page-form{
-	input{
-		background:$grey2;
-		border: 1px solid $slate2;
-		border-width: 1px 0 0 ;
-		&[placeholder] {
-			color: $slate2;
+	.input-group{
+
+		input{
+			background:$grey2;
+			border: 1px solid $slate2;
+			border-width: 1px 0 0 ;
+			@include placeholder {
+				color: $slate2;
+			}
+			&[type="text"] {
+				padding: 8px 15px 8px;
+				font-weight: 500;
+				border: none;
+				&:focus{
+					border: none;
+				}
+			}
 		}
-		&[type="text"] {
-			padding: 8px 15px 8px;
-			font-weight: 500;
+		.form-control{
+			z-index: 0;
 		}
 	}
 	.search-bg{
 		/* border: 1px solid $slate2; */
-		border-width: 1px 0 0 ;
+		border-width: 0 ;
 		background:$grey2 url(images/Icons/PNGs/icon-search.png) center no-repeat;
 		width: 40px;
-		height: 44px;
+		height: 41px;
 	}
 	.input-group {
 		border: 1px solid $slate2;
@@ -55,6 +65,7 @@ form {
 	margin-bottom: 20px;
 }
 .row-results{
+	display: block;
 	border: 1px solid $slate2;
 	border-width: 0 0 1px;
 	padding: 35px 0 10px;

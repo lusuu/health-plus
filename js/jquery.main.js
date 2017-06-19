@@ -1,6 +1,7 @@
 ; jQuery(document).ready(function(){
 	$('.cbalink').hide()/*bug-fix zzz.com.ua. to delete*/
 	menuOpener();
+	menuDropDown();
 	sliderStart();
 	downScroll();
 	upScroll();
@@ -31,6 +32,35 @@ function menuOpener(){
 			jQuery('body').css('overflow','hidden');
 		} else {
 			jQuery('body').css('overflow','auto');
+		}
+	});
+	jQuery(".drop").click(function(e){
+		if(e.target == jQuery('.drop')[0]){
+			jQuery("#header").removeClass("active");
+			jQuery('body').css('overflow','auto');
+		}
+	})
+
+}
+
+function menuDropDown(){
+	document.addEventListener("scroll", function() {
+		jQuery(".main-nav .drop>li").removeClass('hover');
+	});
+	jQuery(".main-nav .drop>li a").click(function(){
+		var thisLi = jQuery(this).closest('li');
+		if (thisLi.hasClass('hover')){
+			console.log('1')
+			thisLi.removeClass('hover');
+		} else {
+			jQuery(".main-nav .drop>li").removeClass('hover')
+			thisLi.addClass('hover');
+		}
+	})
+	$(document).mouseup(function (e) {
+		var container = $(".main-nav .drop");
+		if (container.has(e.target).length === 0){
+			jQuery(".main-nav .drop>li").removeClass('hover');
 		}
 	});
 }
@@ -185,41 +215,47 @@ function doctorTabs(){
 		jQuery(".doctor-content .doctor:first").addClass('active');
 		var docId = jQuery(".doctor-content .doctor.active").attr('data-doctor');
 		jQuery('.global').find('.doctor-info[data-doc-info = '+ docId +']').fadeIn(300);
-		jQuery(".doctor-content").slick({
-			slidesToShow: 6,
-			slidesToScroll: 1,
-			dots: false,
-			draggable:false,
-			responsive: [
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 4,
-					slidesToScroll: 3,
+		if (!jQuery(".doctor-content").hasClass('slick-slider')){
+			jQuery(".doctor-content").slick({
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				dots: false,
+				draggable:false,
+				responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 4,
+						slidesToScroll: 1,
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1,
+						dots: true,
+						draggable:true,
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						dots: true,
+						draggable:true,
+					}
 				}
-			},
-			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 2
-				}
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
-			]
-		})
+				]
+			})
+		}
 		jQuery(".doctor-content .doctor").off().click(function(e){
 			e.preventDefault();
 			jQuery(".doctor-content .doctor").removeClass('active');
 			jQuery(this).addClass('active');
 			var docId = jQuery(this).attr('data-doctor');
-			console.log(docId);
+			//console.log(docId);
 		/*jQuery('.global').find('.doctor-info').fadeOut(300);
 		jQuery('.global').find('.doctor-info[data-doc-info = '+ docId +']').fadeIn(300);*/
 		$.when( jQuery('.global').find('.doctor-info').fadeOut(300) ).then(function(){ 

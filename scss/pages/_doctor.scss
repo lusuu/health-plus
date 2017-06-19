@@ -69,6 +69,14 @@
 	@include media ('<phone') {
 		display: none;
 	}
+	.slick-next:before{
+		background:transparent  url('images/Icons/PNGs/icon-arrow-right.png') center no-repeat;
+	}
+	.slick-prev:before{
+		transform: rotate(180deg);
+		background:transparent  url('images/Icons/PNGs/icon-arrow-right.png') center  no-repeat;
+	}
+	
 }
 .global {
 	margin-bottom: 120px;

@@ -1,11 +1,26 @@
 #header{
-	padding: 60px 0 0;
+	padding: 51px 0 0;
 	position: relative;
 	-webkit-box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.16);
 	-moz-box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.16);
 	box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.16);
+	.right-side{
+		float: right;
+		width: 71%;
+	}
 	.container {
 		position: static;
+		@media (min-width: 1200px){
+			width: 90%;
+		}
+		@media (min-width: 1600px){
+			width: 1580px;
+		}
+		@media (max-width: 1600px){
+			.right-side{
+				width: auto;
+			}
+		}
 	}
 }
 .logo{
@@ -14,10 +29,13 @@
 	position: static;
 	left: 0px;
 	top: 25px;
+	padding-left: 40px;
 	top: 0;
 	left: 0;
+	float: left;
+	margin-top: -28px;
 	a{
-		position: absolute;
+		//position: absolute;
 		top: 37px;
 		left: 218px;
 	}
@@ -25,18 +43,28 @@
 .call{
 	font-size: 18px;
 	font-weight: 900;
-	float: left;
+	float: right;
+	//width: 16%;
 	position: relative;
 	a{
+		margin-right: 24px;
+		margin-top: 5px;
+		float: left;
 		display: block;
+		@media (max-width: 1200px){
+			margin-right: 10px;
+		}
+
 	}
 }
 .bookNow{
-	position: absolute;
+	//position: absolute;
 	top: 54px;
 	right: 0;
+	float: right;
+	margin-right: 15px;
 	top: -6px;
-    right: -187px;
+	right: -187px;
 	border: none;
 	padding: 4px 16px 6px 46px;
 	border-radius: 20px;
@@ -62,6 +90,14 @@
 	height: 15px;
 	background: #fff url(images/Icons/icon-search.svg) 50% 50% no-repeat;
 	background-size: contain;
+	&:hover{
+		background-image: url(images/Icons/icon-search-hover.svg)
+	}
+}
+.main-nav{
+	float: left;
+	margin-left: -25px;
+	margin-right: 15px;
 }
 .tube{
 	display: inline-block;
@@ -103,11 +139,15 @@
 				display: block;
 				position: relative;
 				font-weight: 500;
+				@media (max-width: 1400px){
+					padding-left: 25px;
+				}
 				&:hover{
 					color: $tan2;
 				} 
 			}
 			ul{
+				top: 100%;
 				max-height: 0;
 				padding: 0;
 				overflow: hidden;
@@ -141,8 +181,9 @@
 					display: block;
 				}
 			}
-			&:hover{
+			&.hover{
 				ul{
+
 					padding-top: 50px;
 					padding-bottom: 50px;
 					max-height: 400px;
@@ -158,7 +199,7 @@
 						content: none;
 					}
 				}
-				&:hover{
+				&.hover{
 					ul{
 						padding-top: 155px;
 						padding-bottom: 130px;
@@ -293,7 +334,7 @@
 		}
 		.drop li {
 			>a{
-				padding: 0 10px;
+				padding: 0 10px 20px
 			}
 		}
 	}
@@ -375,7 +416,7 @@
 						bottom: 0;
 					}
 				}
-				&:hover{
+				&.hover{
 					.caret{
 						transform: translateY(-50%)  rotate(225deg);
 					}
@@ -462,7 +503,7 @@
 		}
 
 		.bookNow {
-			margin-top: 10px;
+			//margin-top: 10px;
 			position: static;
 		}
 }
@@ -500,9 +541,7 @@
 			}
 		}
 	}
-	.call{
-		//float: right;
-	}
+
 	.bookNow{
 		display: inline-block;
 		vertical-align: middle;
@@ -534,6 +573,8 @@
 		a{
 			display: inline-block;
 			vertical-align: middle;
+			margin-top: 0;
+			margin-right: 0;
 		}
 	}
 }
