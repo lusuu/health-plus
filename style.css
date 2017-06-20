@@ -20935,6 +20935,7 @@ a.link:hover:after, #footer .box a:hover:after, #footer .copy ul a:hover:after, 
   display: inline-block;
   width: 20px;
   height: 20px;
+  vertical-align: text-top;
   margin-right: 7px;
   background: #fff url(images/Icons/icon-call.svg) 50% 50% no-repeat;
   background-size: contain;
@@ -21751,20 +21752,27 @@ a.link:hover:after, #footer .box a:hover:after, #footer .copy ul a:hover:after, 
   bottom: 0;
   padding-top: 120px;
   color: #fff;
-  top: 45%;
+  min-height: 450px;
   background: transparent url(images/bg-slider.png) left top no-repeat;
   background-size: 55%;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1921px) {
   .slide .desctiption {
     background-size: 63%;
-    padding-top: 165px;
+    padding-top: 123px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .slide .desctiption {
+    min-height: 340px;
   }
 }
 
 @media (max-width: 991px) {
   .slide .desctiption {
+    min-height: 280px;
     padding-top: 70px;
   }
 }
@@ -21800,7 +21808,7 @@ a.link:hover:after, #footer .box a:hover:after, #footer .copy ul a:hover:after, 
   letter-spacing: 0;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1439px) {
   .slide .desctiption h2 {
     font-size: 36px;
     line-height: 1.1;
@@ -21814,7 +21822,7 @@ a.link:hover:after, #footer .box a:hover:after, #footer .copy ul a:hover:after, 
 }
 
 .slide .img-holder {
-  max-height: 85vh;
+  max-height: 87vh;
   overflow: hidden;
 }
 
@@ -22040,12 +22048,18 @@ a.link:hover:after, #footer .box a:hover:after, #footer .copy ul a:hover:after, 
           transform: rotate(180deg);
 }
 
+@media (max-width: 1199px) {
+  .slide .desctiption {
+    background-size: 63%;
+  }
+}
+
 @media (max-width: 991px) {
   .vision-2 {
     display: none;
   }
   .slide .desctiption {
-    background-size: 60%;
+    background-size: 63%;
   }
 }
 
@@ -22083,10 +22097,12 @@ a.link:hover:after, #footer .box a:hover:after, #footer .copy ul a:hover:after, 
   }
   .visible .slick-dots {
     left: auto;
-    padding: 0;
     -webkit-transform: translateX(50%);
         -ms-transform: translateX(50%);
             transform: translateX(50%);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
     bottom: 17px;
   }
   .vision {
